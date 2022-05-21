@@ -166,9 +166,9 @@ describe('server.js', () => {
           project_name: 'Web API',
           project_description: 'Build APIs',
         })
-        expect(res.body[1]).toMatchObject({
-          project_name: 'Web API',
-          project_description: 'Build APIs',
+        expect(res.body[2]).toMatchObject({
+          project_name: 'Databases',
+          project_description: 'Learn SQL',
         })
       }, 750)
     })

@@ -29,10 +29,12 @@ exports.up = async function(knex) {
         .references('project_id')
         .inTable('projects')
     // tbl.varchar('project_description')
+    //         .unsigned()
     //     .references('project_description')
     //     .inTable('projects')
     // tbl.varchar('project_name')
-            // .notNullable()
+    //       .unsigned()
+    //         .notNullable()
     //     .references('project_name')
     //     .inTable('projects')
 

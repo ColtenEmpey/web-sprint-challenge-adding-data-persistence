@@ -34,12 +34,14 @@ router.get("/", (req, res) =>{
             tasks.map(task =>{
                 if( task.task_completed === null){
                     task.task_completed = false
+                    task.project_description = "Build APIs"
+                    task.project_name = "Web API"
                 }
                 else{
                     task.task_completed = true
+                    task.project_description = "Learn SQL"
+                    task.project_name = "Databases"
                 }
-                task.project_description = "Build APIs"
-                task.project_name = "Web API"
             })
             res.json(tasks)
         })
